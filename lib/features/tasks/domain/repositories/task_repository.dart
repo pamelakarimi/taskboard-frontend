@@ -4,7 +4,7 @@ abstract class TaskRepository {
 
   Future<List<Task>> getTasks();
 
-  Future<void> addTask(Task task);
+  Future<void> addTask(String title, String? description, String priority);
 
   Future<void> updateTask(Task task);
 
